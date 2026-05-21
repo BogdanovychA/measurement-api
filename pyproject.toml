@@ -1,0 +1,64 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "measurement-api"
+version = "0.1.0"
+authors = [
+    { name = "Andrii Bogdanovych", email = "a@bogdanovych.org" }
+]
+description = "A lightweight asynchronous Python client for the Google Analytics 4 Measurement Protocol"
+readme = "README.md"
+license = "MIT"
+keywords = [
+    "google-analytics",
+    "ga4",
+    "measurement-protocol",
+    "async",
+    "asyncio",
+    "httpx",
+    "analytics",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Framework :: AsyncIO",
+]
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.24.0",
+]
+[dependency-groups]
+dev = [
+    "pre_commit",
+    "black",
+    "isort",
+    "twine",
+    "pytest",
+    "pytest-asyncio",
+    "respx",
+    "ruff",
+]
+
+[project.urls]
+"Homepage" = "https://www.bogdanovych.org"
+"Repository" = "https://github.com/BogdanovychA/measurement-api"
+"Bug Tracker" = "https://github.com/BogdanovychA/measurement-api/issues"
+"AI Agent Skill" = "https://skills.sh/bogdanovycha/measurement-api/measurement-api"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 88
+target-version = ['py312']
+skip-string-normalization = true
+
+[tool.isort]
+profile = "black"
