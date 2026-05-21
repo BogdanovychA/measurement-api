@@ -37,8 +37,6 @@ dependencies = [
 [dependency-groups]
 dev = [
     "pre_commit",
-    "black",
-    "isort",
     "twine",
     "pytest",
     "pytest-asyncio",
@@ -55,10 +53,9 @@ dev = [
 [tool.setuptools.packages.find]
 where = ["src"]
 
-[tool.black]
+[tool.ruff]
 line-length = 88
-target-version = ['py312']
-skip-string-normalization = true
+target-version = "py312"
 
-[tool.isort]
-profile = "black"
+[tool.ruff.format]
+quote-style = "preserve"
