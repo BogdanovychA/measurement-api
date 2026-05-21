@@ -21,6 +21,16 @@ Use this skill when you need to write or troubleshoot code that logs events, act
 - **Validation Mode**: Integrates with `/debug/mp/collect` to validate payloads without storing dummy data in reports.
 - **Complex Parameters**: Event parameters can be primitives, lists (e.g. e-commerce items), and dictionaries.
 
+## Installation
+Ensure the `measurement-api` package is installed in the target environment:
+```bash
+pip install measurement-api
+```
+Or if using `uv`:
+```bash
+uv add measurement-api
+```
+
 ## Usage Scenarios
 
 ### 1. Basic Event Logging
