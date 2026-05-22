@@ -14,7 +14,7 @@ class MeasurementAPI:
 
     def __init__(
         self,
-        m10t_id: str,
+        id: str,
         secret_key: str,
         *,
         debug: bool = False,
@@ -23,12 +23,12 @@ class MeasurementAPI:
         """Initialize the client for sending events to Google Analytics.
 
         Args:
-            m10t_id: Measurement ID (GA4 data stream measurement ID).
+            id: Measurement ID (GA4 data stream measurement ID).
             secret_key: API Secret Key.
             debug: Debug mode (sends validation requests to the GA4 validation server).
             client: External AsyncClient for connection sharing and pooling.
         """
-        self.id = m10t_id
+        self.id = id
         self.secret_key = secret_key
         self.debug = debug
         self.client = client

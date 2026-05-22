@@ -2,7 +2,7 @@
 name: measurement-api
 description: A lightweight asynchronous Python client for the Google Analytics 4 (GA4) Measurement Protocol. Make sure to use this skill whenever the user mentions GA4, Google Analytics, telemetry, event logging, custom e-commerce tracking, or analytics integrations. Trigger it when writing, testing, troubleshooting, or optimizing Python code that logs user actions, events, errors, or e-commerce transactions to Google Analytics 4 using the measurement-api package. The skill details usage for basic event logging, connection pooling, payload validation (debug mode), and custom httpx client injection.
 metadata:
-  version: 0.1.0
+  version: 0.2.0
   repository: https://github.com/BogdanovychA/measurement-api
 ---
 
@@ -35,7 +35,7 @@ import asyncio
 from measurement_api import MeasurementAPI
 
 async def log_click():
-    api = MeasurementAPI(m10t_id="G-XXXXXXXXXX", secret_key="your_secret_key")
+    api = MeasurementAPI(id="G-XXXXXXXXXX", secret_key="your_secret_key")
     success = await api.log_event(
         client_id="user_123",
         event_name="button_click",

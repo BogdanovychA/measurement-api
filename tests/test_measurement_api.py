@@ -199,3 +199,10 @@ async def test_exceptions_handling() -> None:
     )
     result = await api.log_event("client_1", "event_1")
     assert result is False
+
+
+@respx.mock
+async def test_init_with_keyword_arguments() -> None:
+    api = MeasurementAPI(id="G-12345", secret_key="secret_abc")
+    assert api.id == "G-12345"
+    assert api.secret_key == "secret_abc"

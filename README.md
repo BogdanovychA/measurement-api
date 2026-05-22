@@ -38,7 +38,7 @@ from measurement_api import MeasurementAPI
 async def main():
     # Initialize the client
     api = MeasurementAPI(
-        m10t_id="G-XXXXXXXXXX",
+        id="G-XXXXXXXXXX",
         secret_key="your_api_secret_key"
     )
 
