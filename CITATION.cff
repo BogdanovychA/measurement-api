@@ -6,7 +6,8 @@ authors:
     orcid: "https://orcid.org/0009-0006-9045-5675"
 title: "measurement-api"
 version: 0.2.0
-date-released: 2026-05-22
 abstract: "A lightweight asynchronous Python client for the Google Analytics 4 Measurement Protocol"
 repository-code: "https://github.com/BogdanovychA/measurement-api"
 license: MIT
+doi: 10.5281/zenodo.20343381
+date-released: 2026-05-22
