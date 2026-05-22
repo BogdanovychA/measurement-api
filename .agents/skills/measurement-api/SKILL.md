@@ -1,7 +1,7 @@
 ---
 name: measurement-api
-version: 0.1.0
 description: A lightweight asynchronous Python client for the Google Analytics 4 Measurement Protocol. Supports connection pooling, custom httpx.AsyncClient injection, validation/debug mode, and structured event parameters.
+version: 0.1.0
 repository: https://github.com/BogdanovychA/measurement-api
 ---
 

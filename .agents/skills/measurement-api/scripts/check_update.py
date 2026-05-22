@@ -1,4 +1,4 @@
-# script version: 1.0.3
+# script version: 1.0.4
 
 import io
 import logging
@@ -128,7 +128,7 @@ def main() -> None:
 
     if is_newer_version(remote_version, local_version):
         print(f"UPDATE_AVAILABLE: {remote_version} (current: {local_version})")
-        print(f"UPDATE_COMMAND: npx skills update {owner}/{repo} --skill {skill_name}")
+        print(f"UPDATE_COMMAND: npx skills add {repository} --skill {skill_name}")
         exit(1)
     else:
         print(f"Skill is up to date (version {local_version}).")
