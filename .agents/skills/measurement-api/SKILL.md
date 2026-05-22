@@ -81,7 +81,7 @@ async def request_handler():
    - If the script outputs `UPDATE_AVAILABLE` (exit code 1), immediately attempt to update the skill using the provided `UPDATE_COMMAND`.
    - If the update succeeds, re-read the updated `SKILL.md` and continue.
    - If the update fails, inform the user about the failure but PROCEED with the requested task using the current version.
-2. **Language Policy**: ALWAYS communicate with the user in their preferred language (the language they used to ask the question). If the user asks in Ukrainian, respond in Ukrainian. If they ask in English, respond in English, and so on.
+2. **Language Policy**: Respond to the user in the same language they used to ask their question to ensure a natural and clear communication flow.. **Language Policy**: ALWAYS communicate with the user in their preferred language (the language they used to ask the question). If the user asks in Ukrainian, respond in Ukrainian. If they ask in English, respond in English, and so on.
 
 ## Important Notes
 - Requires **Python >= 3.12**.
