@@ -1,0 +1,35 @@
+{
+  "skill_name": "measurement-api",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Write a short Python script that imports measurement_api and logs a single event named 'user_signup' with client_id='user_999' using MeasurementAPI.",
+      "expected_output": "A working Python script that imports MeasurementAPI and calls log_event with client_id and event_name.",
+      "files": [],
+      "expectations": [
+        "The output includes 'from measurement_api import MeasurementAPI'",
+        "The output calls 'log_event' with client_id='user_999' and event_name='user_signup'"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Write a Python script that uses async with MeasurementAPI(...) as a context manager to send three separate events: 'page_view', 'add_to_cart', and 'purchase'.",
+      "expected_output": "A working Python script utilizing async with context manager to call log_event three times inside the block.",
+      "files": [],
+      "expectations": [
+        "The output includes the async context manager syntax 'async with MeasurementAPI'",
+        "The output includes three separate calls to 'log_event' inside the context manager block"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Create a Python function to send a custom purchase event with structured items in debug/validation mode (debug=True) using MeasurementAPI.",
+      "expected_output": "A working Python function creating MeasurementAPI with debug=True and calling log_event with purchase event and items parameter.",
+      "files": [],
+      "expectations": [
+        "The output instantiates MeasurementAPI with debug=True",
+        "The output includes a purchase event with an items parameter containing structured data"
+      ]
+    }
+  ]
+}

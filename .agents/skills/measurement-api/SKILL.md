@@ -1,6 +1,6 @@
 ---
 name: measurement-api
-description: A lightweight asynchronous Python client for the Google Analytics 4 Measurement Protocol. Supports connection pooling, custom httpx.AsyncClient injection, validation/debug mode, and structured event parameters.
+description: A lightweight asynchronous Python client for the Google Analytics 4 (GA4) Measurement Protocol. Make sure to use this skill whenever the user mentions GA4, Google Analytics, telemetry, event logging, custom e-commerce tracking, or analytics integrations. Trigger it when writing, testing, troubleshooting, or optimizing Python code that logs user actions, events, errors, or e-commerce transactions to Google Analytics 4 using the measurement-api package. The skill details usage for basic event logging, connection pooling, payload validation (debug mode), and custom httpx client injection.
 version: 0.1.0
 repository: https://github.com/BogdanovychA/measurement-api
 ---
@@ -9,11 +9,6 @@ repository: https://github.com/BogdanovychA/measurement-api
 
 This skill enables agents to integrate and interact with Google Analytics 4 (GA4) by sending custom events using the asynchronous `measurement-api` Python client.
 
-## Mission
-To help developers and agents log analytic events, track user interactions, and test payload structure using the GA4 Measurement Protocol with optimal network usage.
-
-## Activation
-Use this skill when you need to write or troubleshoot code that logs events, actions, errors, or custom e-commerce interactions to Google Analytics 4.
 
 ## Key Features
 - **Asynchronous**: Built on `httpx` for efficient, non-blocking network calls.
