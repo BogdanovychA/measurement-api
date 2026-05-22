@@ -4,7 +4,7 @@ A lightweight asynchronous Python client for the Google Analytics 4 (GA4) Measur
 
 ![Made in Ukraine](https://img.shields.io/badge/Made%20in-Ukraine-blue?logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjgwMCI%2BCjxyZWN0IHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjgwMCIgZmlsbD0iIzAwNTdCNyIvPgo8cmVjdCB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI0MDAiIHk9IjQwMCIgZmlsbD0iI0ZGRDcwMCIvPgo8L3N2Zz4%3D)
 
- ![PyPI - License](https://img.shields.io/pypi/l/measurement-api?logoColor=grey&color=blue) ![PyPI - Version](https://img.shields.io/pypi/v/measurement-api?logoColor=grey&color=blue)
+![Pepy Total Downloads](https://img.shields.io/pepy/dt/measurement-api?labelColor=gray&color=blue) ![PyPI - License](https://img.shields.io/pypi/l/measurement-api?logoColor=grey&color=blue) ![PyPI - Version](https://img.shields.io/pypi/v/measurement-api?logoColor=grey&color=blue)
 
 ## Features
 
