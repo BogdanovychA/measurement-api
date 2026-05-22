@@ -136,7 +136,7 @@ We use `pytest` and `respx` to test the client offline without sending actual re
 
 ## AI Agent Skill
 
-This repository includes a specialized skill for AI agents.
+This repository includes a specialized skill for AI agents. It helps the agent provide expert assistance in writing Python code and integrating this library into your projects.
 
 To install the skill, run:
 ```bash
