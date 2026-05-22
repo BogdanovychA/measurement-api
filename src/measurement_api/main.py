@@ -28,6 +28,13 @@ class MeasurementAPI:
             debug: Debug mode (sends validation requests to the GA4 validation server).
             client: External AsyncClient for connection sharing and pooling.
         """
+        if not id or not id.strip():
+            raise ValueError("Measurement ID ('id') must be a non-empty string.")
+        if not secret_key or not secret_key.strip():
+            raise ValueError(
+                "API Secret Key ('secret_key') must be a non-empty string."
+            )
+
         self.id = id
         self.secret_key = secret_key
         self.debug = debug

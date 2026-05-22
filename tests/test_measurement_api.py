@@ -206,3 +206,20 @@ async def test_init_with_keyword_arguments() -> None:
     api = MeasurementAPI(id="G-12345", secret_key="secret_abc")
     assert api.id == "G-12345"
     assert api.secret_key == "secret_abc"
+
+
+async def test_init_validation_failures() -> None:
+    # Test None values
+    with pytest.raises(ValueError, match="Measurement ID"):
+        MeasurementAPI(id=None, secret_key="secret_abc")  # type: ignore
+
+    with pytest.raises(ValueError, match="API Secret Key"):
+        MeasurementAPI(id="G-12345", secret_key=None)  # type: ignore
+
+    # Test empty strings
+    with pytest.raises(ValueError, match="Measurement ID"):
+        MeasurementAPI(id="", secret_key="secret_abc")
+
+    # Test whitespace strings
+    with pytest.raises(ValueError, match="API Secret Key"):
+        MeasurementAPI(id="G-12345", secret_key="   ")
