@@ -134,6 +134,15 @@ We use `pytest` and `respx` to test the client offline without sending actual re
    uv run ruff check
    ```
 
+## AI Agent Skill
+
+This repository includes a specialized skill for AI agents.
+
+To install the skill, run:
+```bash
+npx skills add https://github.com/BogdanovychA/measurement-api --skill measurement-api
+```
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
